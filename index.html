@@ -148,18 +148,92 @@
       from { transform: scale(0.8); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
-  </style>
+  
+50% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+
+  20% { transform: scale(1.05) rotate(-2deg); opacity: 0.95; }
+  40% { transform: scale(0.95) rotate(2deg); opacity: 1; }
+  60% { transform: scale(1.08) rotate(-1deg); opacity: 0.9; }
+  80% { transform: scale(0.98) rotate(1deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 0.97; }
+}
+
+.fire-flicker {
+  display: inline-block;
+  animation: flicker 1.2s infinite;
+}
+
+  15%  { transform: scale(1.1) rotate(-2deg); opacity: 0.92; }
+  30%  { transform: scale(0.95) rotate(1deg); opacity: 1; }
+  45%  { transform: scale(1.08) rotate(-1deg); opacity: 0.85; }
+  60%  { transform: scale(1) rotate(0deg); opacity: 1; }
+  75%  { transform: scale(0.97) rotate(2deg); opacity: 0.95; }
+  90%  { transform: scale(1.05) rotate(-1deg); opacity: 0.9; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+
+
+.card-title-above {
+  font-size: 0.8rem !important;
+  font-weight: bold;
+  padding: 0.6rem 1rem 0.2rem 1rem;
+  color: #fff;
+  background: #005EA8;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@keyframes flicker {
+  0%   { transform: scale(1) rotate(0deg); opacity: 1; }
+  15%  { transform: scale(1.1) rotate(-2deg); opacity: 0.92; }
+  30%  { transform: scale(0.95) rotate(1deg); opacity: 1; }
+  45%  { transform: scale(1.08) rotate(-1deg); opacity: 0.85; }
+  60%  { transform: scale(1) rotate(0deg); opacity: 1; }
+  75%  { transform: scale(0.97) rotate(2deg); opacity: 0.95; }
+  90%  { transform: scale(1.05) rotate(-1deg); opacity: 0.9; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.fire-flicker {
+  display: inline-block;
+  animation: flicker 1.2s infinite;
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.8rem 1rem 0.2rem;
+  background-color: #005EA8;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-content .card-heading {
+  background-color: transparent;
+  color: #000;
+  padding: 0 0 0.5rem 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+</style>
 </head>
 <body>
 <header>
 <h1>AZF-GRUPPE.DE</h1>
-<h1>🔥 VW T-Roc SALE 🔥</h1>
-<p>Bei Volkswagen ist das aktuelle T-Roc-Modell restlos ausverkauft!</p>
-  <p>Wir haben für EUCH vorgesorgt mit 19 sofort verfügbaren Modellen zu TOP-Leasingraten!</p>
+<h1><span class="fire-flicker">🔥</span> VW T-Roc SALE <span class="fire-flicker">🔥</span></h1>
+<p>Bei Volkswagen ist das aktuelle T-Roc Modell restlos ausverkauft!</p>
+<p>Wir haben für euch vorgesorgt mit 19 sofort verfügbaren Modellen zu TOP-Leasingraten!</p>
 </header>
 <section class="grid"><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        258 €/Monat
       </div>
@@ -173,7 +247,7 @@
        Effektiver Jahreszins: 0,87 %
        <br/>
        Gesamtbetrag: 12.384,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA17SV085445
       </div>
 <details style="margin-top: 1rem;">
@@ -242,8 +316,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        258 €/Monat
       </div>
@@ -257,7 +331,7 @@
        Effektiver Jahreszins: 0,87 %
        <br/>
        Gesamtbetrag: 12.384,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA17SV085218
       </div>
 <details style="margin-top: 1rem;">
@@ -326,8 +400,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94163.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94163.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
       260 €/Monat
      </div>
@@ -340,8 +414,8 @@
       <br/>
       Effektiver Jahreszins: 0,85 %
       <br/>
-      Gesamtbetrag: 13.370 €
-      <br/>
+      Gesamtbetrag: 13.370,00 €
+       <br/>
       Fahrgestell-Nr.: WVWZZZA18SV084188
      </div>
 <details style="margin-top: 1rem;">
@@ -410,8 +484,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94224.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94224.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        276 €/Monat
       </div>
@@ -425,7 +499,7 @@
        Effektiver Jahreszins: 0,90 %
        <br/>
        Gesamtbetrag: 13.248,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA10SV094195
       </div>
 <details style="margin-top: 1rem;">
@@ -494,8 +568,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94225.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94225.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        278 €/Monat
       </div>
@@ -508,8 +582,8 @@
        <br/>
        Effektiver Jahreszins: 0,89 %
        <br/>
-       Gesamtbetrag: 13.344 €
-       <br/>
+       Gesamtbetrag: 13.344,00 €
+        <br/>
        Fahrgestell-Nr.: WVWZZZA11SV097378
       </div>
 <details style="margin-top: 1rem;">
@@ -578,8 +652,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94223.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94223.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        278 €/Monat
       </div>
@@ -593,7 +667,7 @@
        Effektiver Jahreszins: 0,89 %
        <br/>
        Gesamtbetrag: 13.344,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA12SV096191
       </div>
 <details style="margin-top: 1rem;">
@@ -662,8 +736,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        278 €/Monat
       </div>
@@ -677,7 +751,7 @@
        Effektiver Jahreszins: 0,89 %
        <br/>
        Gesamtbetrag: 13.344,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA13SV096233
       </div>
 <details style="margin-top: 1rem;">
@@ -746,8 +820,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94221.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang</h2>
+<img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94221.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        278 €/Monat
       </div>
@@ -761,7 +835,7 @@
        Effektiver Jahreszins: 0,89 %
        <br/>
        Gesamtbetrag: 13.344,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA11SV093881
       </div>
 <details style="margin-top: 1rem;">
@@ -830,8 +904,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="94277.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="94277.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        306 €/Monat
       </div>
@@ -845,7 +919,7 @@
        Effektiver Jahreszins: 1,31 %
        <br/>
        Gesamtbetrag: 14.688,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA10SV085724
       </div>
 <details style="margin-top: 1rem;">
@@ -914,8 +988,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        309 €/Monat
       </div>
@@ -929,7 +1003,7 @@
        Effektiver Jahreszins: 1,33 %
        <br/>
        Gesamtbetrag: 14.832,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA19SV085298
       </div>
 <details style="margin-top: 1rem;">
@@ -998,8 +1072,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        310 €/Monat
       </div>
@@ -1013,7 +1087,7 @@
        Effektiver Jahreszins: 1,33 %
        <br/>
        Gesamtbetrag: 14.880,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA16SV086778
       </div>
 <details style="margin-top: 1rem;">
@@ -1082,8 +1156,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="93928.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="93928.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
       319 €/Monat
      </div>
@@ -1096,8 +1170,8 @@
       <br/>
       Effektiver Jahreszins: 0,95 %
       <br/>
-      Gesamtbetrag: 16.202 €
-      <br/>
+      Gesamtbetrag: 16.202,00 €
+       <br/>
       Fahrgestell-Nr.: WVWZZZA17SV105872
      </div>
 <details style="margin-top: 1rem;">
@@ -1166,8 +1240,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 2.0 TDI SCR (150 PS) 7-Gang-DSG" src="94175.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 2.0 TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 2.0 TDI SCR (150 PS) 7-Gang-DSG" src="94175.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        328 €/Monat
       </div>
@@ -1181,7 +1255,7 @@
        Effektiver Jahreszins: 0,98 %
        <br/>
        Gesamtbetrag: 15.744,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA16SV142475
       </div>
 <details style="margin-top: 1rem;">
@@ -1250,8 +1324,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="93791.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="93791.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
       336 €/Monat
      </div>
@@ -1264,8 +1338,8 @@
       <br/>
       Effektiver Jahreszins: 1,36 %
       <br/>
-      Gesamtbetrag: 17.018 €
-      <br/>
+      Gesamtbetrag: 17.018,00 €
+       <br/>
       Fahrgestell-Nr.: WVWZZZA14SV064763
      </div>
 <details style="margin-top: 1rem;">
@@ -1334,8 +1408,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94172.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94172.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        338 €/Monat
       </div>
@@ -1349,7 +1423,7 @@
        Effektiver Jahreszins: 0,96 %
        <br/>
        Gesamtbetrag: 16.224,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA13SV135371
       </div>
 <details style="margin-top: 1rem;">
@@ -1418,8 +1492,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94171.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94171.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        338 €/Monat
       </div>
@@ -1433,7 +1507,7 @@
        Effektiver Jahreszins: 0,96 %
        <br/>
        Gesamtbetrag: 16.224,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVWZZZA14SV135265
       </div>
 <details style="margin-top: 1rem;">
@@ -1502,8 +1576,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94167.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94167.jpg"/><h2 class="card-title-above">VW T-Roc GOAL 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
       345 €/Monat
      </div>
@@ -1516,8 +1590,8 @@
       <br/>
       Effektiver Jahreszins: 1,19 %
       <br/>
-      Gesamtbetrag: 17.418 €
-      <br/>
+      Gesamtbetrag: 17.418,00 €
+       <br/>
       Fahrgestell-Nr.: WVWZZZA14SV107711
      </div>
 <details style="margin-top: 1rem;">
@@ -1586,8 +1660,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94169.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94169.jpg"/><h2 class="card-title-above">VW T-Roc GOAL 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        348 €/Monat
       </div>
@@ -1600,8 +1674,8 @@
        <br/>
        Effektiver Jahreszins: 1,19 %
        <br/>
-       Gesamtbetrag: 17.972 €
-       <br/>
+       Gesamtbetrag: 17.972,00 €
+        <br/>
        Fahrgestell-Nr.: WVWZZZA14SV107952
       </div>
 <details style="margin-top: 1rem;">
@@ -1670,8 +1744,8 @@
 </details>
 </div>
 </div><div class="card">
-<img alt="VW T-Roc R-Line 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="placeholder.jpg"/>
-<div class="card-content"><h2 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 0.4rem;">VW T-Roc R-Line 2.0 l TDI SCR (150 PS) 7-Gang-DSG</h2>
+<img alt="VW T-Roc R-Line 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 2.0 l TDI 7-Gang DSG (150 PS)</h2>
+<div class="card-content">
 <div class="leasing">
        351 €/Monat
       </div>
@@ -1685,7 +1759,7 @@
        Effektiver Jahreszins: 1,35 %
        <br/>
        Gesamtbetrag: 16.848,00 €
-       <br/>
+        <br/>
        Fahrgestell-Nr.: WVGZZZA12SV139864
       </div>
 <details style="margin-top: 1rem;">
