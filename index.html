@@ -5,264 +5,232 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>🔥 VW T-Roc Sonderleasing 🔥| AZF-GRUPPE.DE</title>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
-    body {
-      margin: 0;
-      font-family: 'Barlow', sans-serif;
-      background: linear-gradient(135deg, #003399, #0055cc);
-      color: white;
-    }
-
-    header {
-      background: #001f4d;
-      padding: 3rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #e0e0e0;
-      margin-top: 0.5rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .card {
-      background: white;
-      color: #001f4d;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 25px rgba(0, 85, 204, 0.4);
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      background: #ccc;
-    }
-
-    .card-content {
-      padding: 1.2rem;
-    }
-
-    .card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .leasing {
-      color: #0055cc;
-      font-weight: 700;
-      font-size: 1.4rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .details {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #333;
-    }
-    .modal {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.75);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-    }
-
-    .modal-content {
-      background: #fff;
-      color: #000;
-      padding: 2rem;
-      border-radius: 20px;
-      max-width: 600px;
-      width: 90%;
-      animation: zoomIn 0.3s ease-in-out;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-    }
-
-    .modal-close {
-      float: right;
-      font-size: 1.5rem;
-      font-weight: bold;
-      cursor: pointer;
-      color: #0055cc;
-    }
-
-    #ausstattung-text ul {
-      padding-left: 1.2rem;
-    }
-
-    #leasing-raten {
-      margin-top: 1.5rem;
-      border-top: 1px solid #ccc;
-      padding-top: 1rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-
-    th, td {
-      padding: 0.5rem;
-      text-align: left;
-    }
-
-    th {
-      background-color: #0055cc;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-
-    @keyframes zoomIn {
-      from { transform: scale(0.8); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
-    }
-  
-50% { transform: scale(1.25); }
-  100% { transform: scale(1); }
-}
-
-
-  20% { transform: scale(1.05) rotate(-2deg); opacity: 0.95; }
-  40% { transform: scale(0.95) rotate(2deg); opacity: 1; }
-  60% { transform: scale(1.08) rotate(-1deg); opacity: 0.9; }
-  80% { transform: scale(0.98) rotate(1deg); opacity: 1; }
-  100% { transform: scale(1) rotate(0deg); opacity: 0.97; }
-}
-
-.fire-flicker {
-  display: inline-block;
-  animation: flicker 1.2s infinite;
-}
-
-  15%  { transform: scale(1.1) rotate(-2deg); opacity: 0.92; }
-  30%  { transform: scale(0.95) rotate(1deg); opacity: 1; }
-  45%  { transform: scale(1.08) rotate(-1deg); opacity: 0.85; }
-  60%  { transform: scale(1) rotate(0deg); opacity: 1; }
-  75%  { transform: scale(0.97) rotate(2deg); opacity: 0.95; }
-  90%  { transform: scale(1.05) rotate(-1deg); opacity: 0.9; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
-}
-
-
-
-.card-title-above {
-  font-size: 0.8rem !important;
-  font-weight: bold;
-  padding: 0.6rem 1rem 0.2rem 1rem;
-  color: #0055cc;
-  background: #005EA8;
-  text-align: center;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-@keyframes flicker {
-  0%   { transform: scale(1) rotate(0deg); opacity: 1; }
-  15%  { transform: scale(1.1) rotate(-2deg); opacity: 0.92; }
-  30%  { transform: scale(0.95) rotate(1deg); opacity: 1; }
-  45%  { transform: scale(1.08) rotate(-1deg); opacity: 0.85; }
-  60%  { transform: scale(1) rotate(0deg); opacity: 1; }
-  75%  { transform: scale(0.97) rotate(2deg); opacity: 0.95; }
-  90%  { transform: scale(1.05) rotate(-1deg); opacity: 0.9; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
-}
-.fire-flicker {
-  display: inline-block;
-  animation: flicker 1.2s infinite;
-}
-
-.card-heading {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0.8rem 1rem 0.2rem;
-  background-color: #005EA8;
-  color: #fff;
-  text-align: center;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.card-content .card-heading {
-  background-color: transparent;
-  color: #000;
-  padding: 0 0 0.5rem 0;
-  text-align: left;
-  font-size: 1.1rem;
-}
-
-@media (max-width: 600px) {
+  body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(135deg, #003399, #0055cc);
+    color: white;
+  }
+  header {
+    background: #001f4d;
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
   header h1 {
-    font-size: 2rem;
+    font-size: 5rem;
+    margin: 0;
   }
-
+  header p {
+    font-size: 1.3rem;
+    color: #ffd;
+  }
+  .cta-button {
+    display: inline-block;
+    background: #ffcc00;
+    color: #001f4d;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-decoration: none;
+    animation: pulse 1.5s infinite alternate;
+  }
+  @keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+  }
   .grid {
-    padding: 1rem;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
   }
-
   .card {
-    border-radius: 12px;
+    background: white;
+    color: #001f4d;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
   }
-
-  .card img {
-    height: 140px;
-  }
-
-  .card-title-above {
-    font-size: 0.9rem;
+  .card .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
     padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #ccc;
+  }
+  .card-content {
+    padding: 1.2rem;
+  }
+  .leasing {
+    color: #e60000;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .details {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  .sticky-call {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #ffcc00;
+    color: #001f4d;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 999px;
+    z-index: 1000;
+    animation: pulse 1.5s infinite;
+  }
+  .google-reviews {
+    text-align: center;
+    padding: 2rem;
+    background: #ffffff10;
+    color: white;
+  }
+  .google-reviews a {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
   }
 
+.anhaenger-hinweis {
+  display: inline-block;
+  margin-top: 0.7rem;
+  background: #007acc;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+@keyframes flameFlicker {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+.fire-flicker {
+  display: inline-block;
+  animation: flameFlicker 0.6s infinite;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.modal-content button {
+  background: #003399;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.anfrage-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffcc00;
+  border: none;
+  font-weight: bold;
+  color: #001f4d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.anfrage-button:hover {
+  background: #ffdb4d;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100% !important;
+    font-size: 0.95rem;
+  }
   .card-content {
     padding: 1rem;
   }
-
-  .leasing {
-    font-size: 1.2rem;
+  .modal-content {
+    padding: 1rem;
   }
-
-  .details {
-    font-size: 0.9rem;
+  .anfrage-button {
+    width: 100%;
+    margin-top: 0.5rem;
   }
 }
+
+
+.ahk-icon {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+
+.ahk-hinweis {
+  font-size: 0.85rem;
+  background: #004080;
+  color: white;
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
 </style>
 </head>
 <body>
-<header>
-<h1>AZF-GRUPPE.DE</h1>
+<header><div style="text-align: center; margin: 2rem auto; font-family: 'Barlow', sans-serif; font-size: 2.5rem;"><span style="font-weight: 700;">AZF</span><span style="font-weight: 400;">-GRUPPE.DE</span></div>
 <h1><span class="fire-flicker">🔥</span> VW T-Roc SALE <span class="fire-flicker">🔥</span></h1>
 <p>Bei Volkswagen ist das aktuelle T-Roc Modell restlos ausverkauft!</p>
 <p>Wir haben für euch vorgesorgt mit 19 sofort verfügbaren Modellen zu TOP-Leasingraten!</p>
@@ -270,9 +238,7 @@
 <section class="grid"><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       258 €/Monat
-      </div>
+<div class="leasing">🔥 Nur 258 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -285,7 +251,8 @@
        Gesamtbetrag: 12.384,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA17SV085445
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -354,9 +321,7 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       258 €/Monat
-      </div>
+<div class="leasing">🔥 Nur 258 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -368,8 +333,9 @@
        <br/>
        Gesamtbetrag: 12.384,00 €
         <br/>
-       Fahrgestell-Nr.: WVWZZZA17SV085218
-      </div>
+       Fahrgestell-Nr.: WVGZZZA17SV085218
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -438,9 +404,7 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94163.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-      260 €/Monat
-     </div>
+<div class="leasing">🔥 Nur 260 €/Monat</div>
 <div class="details">
       Laufzeit: 48 Monate
       <br/>
@@ -453,7 +417,8 @@
       Gesamtbetrag: 13.370,00 €
        <br/>
       Fahrgestell-Nr.: WVWZZZA18SV084188
-     </div>
+     <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
        Weitere Leasingraten anzeigen
@@ -522,9 +487,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94224.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       276 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 276 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -537,7 +501,8 @@
        Gesamtbetrag: 13.248,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA10SV094195
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -606,9 +571,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94225.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       278 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 278 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -621,7 +585,8 @@
        Gesamtbetrag: 13.344,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA11SV097378
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -690,9 +655,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94223.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       278 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 278 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -705,7 +669,8 @@
        Gesamtbetrag: 13.344,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA12SV096191
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -774,9 +739,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       278 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 278 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -789,7 +753,8 @@
        Gesamtbetrag: 13.344,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA13SV096233
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -858,9 +823,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 1.5 l TSI OPF (150 PS) 6-Gang" src="94221.jpg"/><h2 class="card-title-above">VW T-Roc Style 1.5 l TSI 6-Gang (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       278 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 278 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -873,7 +837,8 @@
        Gesamtbetrag: 13.344,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA11SV093881
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -942,9 +907,8 @@
 </div><div class="card">
 <img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       309 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 309 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -957,7 +921,8 @@
        Gesamtbetrag: 14.832,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA19SV085298
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1026,9 +991,8 @@
 </div><div class="card">
 <img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       310 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 310 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1041,7 +1005,8 @@
        Gesamtbetrag: 14.880,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA16SV086778
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1110,9 +1075,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="93928.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-      319 €/Monat
-     </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 319 €/Monat</div>
 <div class="details">
       Laufzeit: 48 Monate
       <br/>
@@ -1125,7 +1089,8 @@
       Gesamtbetrag: 16.202,00 €
        <br/>
       Fahrgestell-Nr.: WVWZZZA17SV105872
-     </div>
+     <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
        Weitere Leasingraten anzeigen
@@ -1194,9 +1159,8 @@
 </div><div class="card">
 <img alt="VW T-Roc R-Line 2.0 TDI SCR (150 PS) 7-Gang-DSG" src="94175.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       328 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 328 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1209,7 +1173,8 @@
        Gesamtbetrag: 15.744,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA16SV142475
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1278,9 +1243,8 @@
 </div><div class="card">
 <img alt="VW T-Roc R-Line 1.5 l TSI OPF (150 PS) 7-Gang-DSG" src="93791.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 1.5 l TSI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-      336 €/Monat
-     </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 336 €/Monat</div>
 <div class="details">
       Laufzeit: 48 Monate
       <br/>
@@ -1293,7 +1257,8 @@
       Gesamtbetrag: 17.018,00 €
        <br/>
       Fahrgestell-Nr.: WVWZZZA14SV064763
-     </div>
+     <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
        Weitere Leasingraten anzeigen
@@ -1362,9 +1327,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94172.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       338 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 338 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1377,7 +1341,8 @@
        Gesamtbetrag: 16.224,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA13SV135371
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1446,9 +1411,8 @@
 </div><div class="card">
 <img alt="VW T-Roc Style 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94171.jpg"/><h2 class="card-title-above">VW T-Roc Style 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       338 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 338 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1461,7 +1425,8 @@
        Gesamtbetrag: 16.224,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA14SV135265
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1530,9 +1495,8 @@
 </div><div class="card">
 <img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94167.jpg"/><h2 class="card-title-above">VW T-Roc GOAL 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-      345 €/Monat
-     </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 345 €/Monat</div>
 <div class="details">
       Laufzeit: 48 Monate
       <br/>
@@ -1545,7 +1509,8 @@
       Gesamtbetrag: 17.418,00 €
        <br/>
       Fahrgestell-Nr.: WVWZZZA14SV107711
-     </div>
+     <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
        Weitere Leasingraten anzeigen
@@ -1614,9 +1579,8 @@
 </div><div class="card">
 <img alt="VW T-Roc GOAL 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="94169.jpg"/><h2 class="card-title-above">VW T-Roc GOAL 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       348 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 348 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1629,7 +1593,8 @@
        Gesamtbetrag: 17.972,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA14SV107952
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1695,12 +1660,12 @@
 </ul>
 </details>
 </div>
-</div><div class="card">
+</div>
+<div class="card">
 <img alt="VW T-Roc R-Line 2.0 l TDI SCR (150 PS) 7-Gang-DSG" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R-Line 2.0 l TDI 7-Gang DSG (150 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       351 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 351 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1712,8 +1677,9 @@
        <br/>
        Gesamtbetrag: 16.848,00 €
         <br/>
-       Fahrgestell-Nr.: WVGZZZA12SV139864
-      </div>
+       Fahrgestell-Nr.: WVGZZZA12SV139864 
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1780,11 +1746,10 @@
 </details>
 </div>
     </div><div class="card">
-<img alt="VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS) " src="94174.jpg"/><h2 class="card-title-above">VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)</h2>
+<img alt="VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)</h2>
 <div class="card-content">
-<div class="leasing">
-       396 €/Monat
-      </div>
+<div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
+<div class="leasing">🔥 Nur 396 €/Monat</div>
 <div class="details">
        Laufzeit: 48 Monate
        <br/>
@@ -1797,7 +1762,8 @@
        Gesamtbetrag: 19.898,00 €
         <br/>
        Fahrgestell-Nr.: WVWZZZA15SV143018
-      </div>
+      <button class="anfrage-button" onclick="openModal(this)">📩 Anfragen</button>
+</div>
 <details style="margin-top: 1rem;">
 <summary>
         Weitere Leasingraten anzeigen
@@ -1864,5 +1830,48 @@
 </details>
 </div>
 </div></section>
+<section class="google-reviews">
+<p>⭐ <strong>Google-Bewertungen anzeigen</strong> – 4,8 Sterne von zufriedenen Kunden!</p>
+<p><a href="https://www.google.com/search?q=VW%20Autozentrum%20Nord%20GmbH%20Rezensionen&amp;rflfq=1&amp;num=20&amp;stick=H4sIAAAAAAAAAONgkxI2MrM0tDA3NjY1MDI0szAysDS33MDI-IpRJSxcwbG0JL8qNa-kqDRXwS-_KEXBPTfJQyEoFShWnJmfl5q3iJUoZQDztZgqaAAAAA&amp;rldimm=2691873350216820979&amp;tbm=lcl&amp;cs=1&amp;hl=de&amp;sa=X&amp;ved=0CCEQ9fQKKABqFwoTCMi3ic6s3Y0DFQAAAAAdAAAAABAG&amp;biw=1229&amp;bih=556&amp;dpr=1.56#lkt=LocalPoiReviews" target="_blank">👉 Zu den Google-Rezensionen</a></p>
+</section>
+
+<div class="modal" id="anfrageModal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <h2>Fahrzeuganfrage</h2>
+    <form id="anfrageForm">
+      <input type="text" name="name" placeholder="Dein Name" required />
+      <input type="tel" name="phone" placeholder="Telefonnummer" required />
+      <input type="email" name="email" placeholder="E-Mail-Adresse" required />
+      <textarea name="message" rows="4" placeholder="Deine Nachricht..." required></textarea>
+      <button type="submit">Anfrage senden</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("9dSgMZtuzvBCSMvWM");
+  function openModal(button) {
+    document.getElementById('anfrageModal').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('anfrageModal').style.display = 'none';
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById('anfrageForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      emailjs.sendForm('service_yxu2o08', 'template_79yaglj', this)
+        .then(() => {
+          alert('Anfrage gesendet!');
+          closeModal();
+          this.reset();
+        }, (error) => {
+          alert('Fehler beim Senden: ' + JSON.stringify(error));
+        });
+    });
+  });
+</script>
+
 </body>
 </html>
