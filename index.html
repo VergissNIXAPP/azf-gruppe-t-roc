@@ -7,47 +7,6 @@
 <title>🔥 VW T-Roc Sonderleasing 🔥| AZF-GRUPPE.DE</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
-  .lagerfahrzeuge-hinweis {
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #ffffff; /* Heller Hintergrund */
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: Barlow, sans-serif;
-  color: #222222; /* Dunkler Text */
-}
-
-.lagerfahrzeuge-hinweis .highlight {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #003366; /* Dunkles Blau */
-  margin-bottom: 15px;
-}
-
-.lagerfahrzeuge-hinweis .claim {
-  font-weight: bold;
-  color: #cc0000; /* Signalrot */
-  margin-top: 20px;
-}
-
-.lagerfahrzeuge-hinweis .cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #0066cc; /* Kräftiges Blau */
-  color: #ffffff; /* Weißer Text */
-  text-decoration: none;
-  padding: 12px 24px;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.lagerfahrzeuge-hinweis .cta-button:hover {
-  background-color: #004999; /* Dunkleres Blau beim Hover */
-}
-
   body {
     margin: 0;
     font-family: 'Barlow', sans-serif;
@@ -268,17 +227,32 @@
   margin-bottom: 0.5rem;
 }
 
- 
-  .site-footer {
-  background-color: #1a1a1a;
-  color: #f0f0f0;
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  margin-top: 3rem;
-  border-top: 3px solid #007bff;
-}
 
+  @media screen and (max-width: 480px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+    .cta-button, .anfrage-button {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+    }
+    .card-content {
+      font-size: 0.95rem;
+    }
+    .leasing {
+      font-size: 1.3rem;
+    }
+    .details {
+      font-size: 0.9rem;
+    }
+    .modal-content input,
+    .modal-content textarea {
+      font-size: 1rem;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1798,7 +1772,7 @@
 </details>
 </div>
     </div><div class="card">
-<img alt="VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)" src="94174.jpg"/><h2 class="card-title-above">VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)</h2>
+<img alt="VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)" src="placeholder.jpg"/><h2 class="card-title-above">VW T-Roc R 2.0 l TSI OPF 7-Gang DSG (300 PS)</h2>
 <div class="card-content">
 <div class="ahk-hinweis">🛻 Mit Anhängevorrichtung</div>
 <div class="leasing">🔥 Nur 396 €/Monat</div>
@@ -1882,16 +1856,11 @@
 </details>
 </div>
 </div></section>
-<section class="lagerfahrzeuge-hinweis">
-  <p class="highlight">🚗 <strong>Mehr als 1.200 Fahrzeuge SOFORT VERFÜGBAR</strong></p>
-  <p class="claim">KAUFE KEIN AUTO BEVOR DU BEI AZF WARST</p>
-  <p>
-   <a href="https://www.azf-gruppe.de" target="_blank" class="cta-button">
-  ▶️ Mobilität erleben ◀️ <span style="font-size: 1.2em;/span>
-    </a>
-  </p>
+<section class="google-reviews">
+<p>⭐ <strong>Google-Bewertungen anzeigen</strong> – 4,8 Sterne von zufriedenen Kunden!</p>
+<p><a href="https://www.google.com/search?q=VW%20Autozentrum%20Nord%20GmbH%20Rezensionen&amp;rflfq=1&amp;num=20&amp;stick=H4sIAAAAAAAAAONgkxI2MrM0tDA3NjY1MDI0szAysDS33MDI-IpRJSxcwbG0JL8qNa-kqDRXwS-_KEXBPTfJQyEoFShWnJmfl5q3iJUoZQDztZgqaAAAAA&amp;rldimm=2691873350216820979&amp;tbm=lcl&amp;cs=1&amp;hl=de&amp;sa=X&amp;ved=0CCEQ9fQKKABqFwoTCMi3ic6s3Y0DFQAAAAAdAAAAABAG&amp;biw=1229&amp;bih=556&amp;dpr=1.56#lkt=LocalPoiReviews" target="_blank">👉 Zu den Google-Rezensionen</a></p>
 </section>
-  
+
 <div class="modal" id="anfrageModal">
   <div class="modal-content">
     <span class="close-modal" onclick="closeModal()">&times;</span>
@@ -1931,7 +1900,4 @@
 </script>
 
 </body>
-  <footer class="site-footer">
-  <p>© 2025 AZF Unternehmensgruppe – Alle Rechte vorbehalten.</p>
-</footer>
 </html>
